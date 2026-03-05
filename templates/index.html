@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Intelligent Text Correction</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="hero">
+
+<div class="badge">NLP POWERED</div>
+
+<h1>Intelligent Text Correction</h1>
+
+<p>Advanced spelling, grammar & structure analysis powered by natural language processing</p>
+
+</div>
+
+
+<div class="examples">
+
+<button onclick="setExample('she go to school yesterday')">she go to school yesterday</button>
+
+<button onclick="setExample('i doesnt know what you talking about')">i doesnt know what you talking about</button>
+
+<button onclick="setExample('their going to there house')">their going to there house</button>
+
+<button onclick="setExample('he dont like pizza')">he dont like pizza</button>
+
+<button onclick="setExample('they is playing football')">they is playing football</button>
+
+<button onclick="setExample('we was waiting for the bus')">we was waiting for the bus</button>
+
+<button onclick="setExample('she have a new car')">she have a new car</button>
+
+<button onclick="setExample('yesterday i go to college')">yesterday i go to college</button>
+
+<button onclick="setExample('i recieved your messege yesterday')">i recieved your messege yesterday</button>
+
+<button onclick="setExample('the informaton was procesed quickly')">the informaton was procesed quickly</button>
+
+<button onclick="setExample('please chek the documnt carefully')">please chek the documnt carefully</button>
+
+<button onclick="setExample('this sentense has many erors')">this sentense has many erors</button>
+
+<button onclick="setExample('he bought apple from market')">he bought apple from market</button>
+
+<button onclick="setExample('she is best student in class')">she is best student in class</button>
+
+<button onclick="setExample('i saw elephant in zoo')">i saw elephant in zoo</button>
+
+<button onclick="setExample('we went to park yesterday')">we went to park yesterday</button>
+
+<button onclick="setExample('he write the report yesterday')">he write the report yesterday</button>
+
+<button onclick="setExample('they come here last week')">they come here last week</button>
+
+<button onclick="setExample('i very like this movie')">i very like this movie</button>
+
+<button onclick="setExample('she suggested me to try again')">she suggested me to try again</button>
+
+</div>
+
+
+<div class="editor">
+
+<textarea id="inputText" placeholder="Enter your text here..."></textarea>
+
+<button class="correct-btn" onclick="correctText()">Correct Text</button>
+
+</div>
+
+
+<div class="result">
+
+<h3>Corrected Output</h3>
+
+<textarea id="outputText" readonly></textarea>
+
+</div>
+
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
